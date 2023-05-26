@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ <bean class="com.spring.autowire.Address" name="add1">
+    <property name="street" value="marg"/>
+      <property name="city" value="Delhi"/>
+ 
+ </bean>
+ 
+ 
+ <bean class="com.spring.autowire.Address" name="add">
+    <property name="street" value="seventy"/>
+      <property name="city" value="mumbai"/>
+ 
+ </bean>
+ 
+ 
+ <!--in byName the name attribute must match the address attribute of Emp class  -->
+ 
+ <!--in byType the qualified name of the Address Bean should match  -->
+ 
+
+
+<!--  setter Method is called  -->
+
+
+
+ 
+ <bean class="com.spring.autowire.Emp" name="emp1"   autowire="byName"/>
+ 
+ <!--  <bean class="com.spring.autowire.Emp" name="emp1"   autowire="byType"/> -->
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </beans>

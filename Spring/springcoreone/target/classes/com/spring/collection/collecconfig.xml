@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ <bean class="com.spring.collection.Emp" name="Emp1" >   <!--name can be given anything  -->
+ 
+ 
+ 
+ <property name="name" value="Veena"/>
+ 
+ 
+ <property name="phones">
+ 
+ <list>
+ 
+ <value>689797</value>
+ <value>689797</value>
+ <value>689797</value>
+
+ <null/>
+ </list> 
+ 
+ </property>
+ 
+ <property name="add">
+ <set>
+ 
+ <value>kanpur</value>
+ <value>ujjain</value>
+ <value>indore</value>
+ 
+ </set>
+ 
+ 
+ 
+ </property>
+ 
+ 
+ <property name="courses">
+ 
+ <map>
+ 
+ <entry key="java" value="1"/>
+ 
+ <entry key="hibernate" value="2"/>
+ 
+ <entry key="spring" value="3"/>
+ 
+ </map>
+ 
+ 
+ 
+ </property>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </bean>
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ </beans>
